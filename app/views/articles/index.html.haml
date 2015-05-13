@@ -1,0 +1,10 @@
+%h1 List all articles
+
+- @articles.each do |article|
+  %p
+    =article.title
+  %p
+    =article.text
+
+
+= link_to 'New article', new_article_path
